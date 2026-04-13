@@ -678,7 +678,10 @@ function BookWormDesk({
             <div className="panel-heading">
               <div>
                 <p className="eyebrow">Extensions</p>
-                <h2>Installed through chat</h2>
+                <h2>Installed Extensions</h2>
+                <p className="panel-caption">
+                  Loaded dynamically through chat-approved Think extensions.
+                </p>
               </div>
             </div>
             {extensions.length === 0 ? (
@@ -689,11 +692,32 @@ function BookWormDesk({
             ) : (
               <div className="meta-list">
                 {extensions.map((extension) => (
-                  <article key={extension.name} className="meta-card">
-                    <p className="meta-title">{extension.name}</p>
-                    <p>{extension.description || "No description"}</p>
-                    <p>Version {extension.version}</p>
-                    <p>Tools: {extension.tools.join(", ")}</p>
+                  <article key={extension.name} className="meta-card extension-card">
+                    <div className="extension-card-header">
+                      <p className="meta-title extension-name">{extension.name}</p>
+                      <span className="extension-version">v{extension.version}</span>
+                    </div>
+                    <p className="extension-description">
+                      {extension.description || "No description provided."}
+                    </p>
+                    <div className="extension-badges">
+                      <span className="extension-badge">
+                        {extension.tools.length} tool{extension.tools.length === 1 ? "" : "s"}
+                      </span>
+                      <span className="extension-badge">
+                        Workspace: {extension.permissions.workspace ?? "none"}
+                      </span>
+                      <span className="extension-badge">
+                        Network: {extension.permissions.network?.length ? "enabled" : "off"}
+                      </span>
+                    </div>
+                    <div className="extension-tools">
+                      {extension.tools.map((tool) => (
+                        <span key={tool} className="extension-tool-pill">
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
                   </article>
                 ))}
               </div>

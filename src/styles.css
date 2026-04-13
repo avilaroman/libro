@@ -329,6 +329,12 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.panel-caption {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
 .shelf-grid {
   display: grid;
   gap: 0.9rem;
@@ -368,10 +374,17 @@ h1 {
 }
 
 .book-stack,
-.meta-list,
-.message-list {
+.meta-list {
   display: grid;
   gap: 0.75rem;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  align-content: flex-start;
 }
 
 .book-card,
@@ -442,6 +455,65 @@ h1 {
   color: var(--gold);
 }
 
+.extension-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.extension-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.extension-name {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.extension-version,
+.extension-badge,
+.extension-tool-pill {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.extension-version {
+  padding: 0.25rem 0.55rem;
+  color: var(--gold);
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.extension-description {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.extension-badges,
+.extension-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.extension-badge {
+  padding: 0.28rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.extension-tool-pill {
+  padding: 0.28rem 0.6rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+}
+
 .chat-panel {
   min-height: 70vh;
 }
@@ -467,10 +539,12 @@ h1 {
 
 .message-row {
   display: flex;
+  align-self: flex-start;
 }
 
 .message-row.user {
   justify-content: flex-end;
+  align-self: stretch;
 }
 
 .message-row.assistant {
@@ -705,6 +779,11 @@ pre {
   .site-footer {
     bottom: 0.6rem;
     width: calc(100vw - 1rem);
+  }
+
+  .extension-card-header {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .message-bubble {
