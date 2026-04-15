@@ -2,6 +2,8 @@
 
 BookWorm is an educational demo for Cloudflare's Think-style agents. Each reader enters their name on the home page, which opens a dedicated long-running agent instance with a durable bookshelf, reminder scheduling, Open Library metadata, and chat-installed Think extensions.
 
+[<img src="https://img.youtube.com/vi/tlE2Fn8WAgw/0.jpg">](https://youtu.be/tlE2Fn8WAgw "Introducing Think")
+
 Live deployment: `https://bookworm.craigsdemos.workers.dev`
 
 ## Features
