@@ -28,7 +28,7 @@
     "bindings": [
       {
         "name": "libro",
-        "class_name": "libro"
+        "class_name": "libropdf"
       }
     ]
   },
