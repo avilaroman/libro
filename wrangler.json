@@ -17,7 +17,7 @@
   "r2_buckets": [
     {
       "binding": "WORKSPACE_R2",
-      "bucket_name": "libro"
+      "bucket_name": "libropdf"
     }
   ],
   "assets": {
@@ -27,7 +27,7 @@
   "durable_objects": {
     "bindings": [
       {
-        "name": "libro",
+        "name": "map_Globe",
         "class_name": "libropdf"
       }
     ]
