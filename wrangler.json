@@ -17,7 +17,7 @@
   "r2_buckets": [
     {
       "binding": "WORKSPACE_R2",
-      "bucket_name": "5863bd5f917df7319a565284f8ae8422_libropdf"
+      "bucket_name": "libro"
     }
   ],
   "assets": {
