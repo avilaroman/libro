@@ -4,7 +4,7 @@
   "account_id": "5863bd5f917df7319a565284f8ae8422",
   "main": "src/server.ts",
   "compatibility_date": "2026-04-12",
-  "compatibility_flags": ["nodejs_compat", "experimental"],
+  "compatibility_flags": ["nodejs_compat"],
   "ai": {
     "binding": "AI",
     "remote": true
