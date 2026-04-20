@@ -349,7 +349,7 @@ function formatDigestMarkdown(state: BookWormState): string {
   return lines.join("\n");
 }
 
-export class BookWormAgent extends Think<Env> {
+export class cf_agents_mcp_servers extends Think<Env> {
   initialState: BookWormState = INITIAL_BOOKWORM_STATE;
   override workspace = new Workspace({
     sql: this.ctx.storage.sql,
