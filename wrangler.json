@@ -27,8 +27,8 @@
   "durable_objects": {
     "bindings": [
       {
-        "name": "map_Globe",
-        "class_name": "libropdf"
+        "name": "nlwebs_NLWebMcp",
+        "class_name": "cf_agents_mcp_servers"
       }
     ]
   },
