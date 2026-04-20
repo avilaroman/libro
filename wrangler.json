@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "bookworm",
-  "account_id": "51e28e9a83197a9f12a2e39f9477ba4e",
+  "account_id": "5863bd5f917df7319a565284f8ae8422",
   "main": "src/server.ts",
   "compatibility_date": "2026-04-12",
   "compatibility_flags": ["nodejs_compat", "experimental"],
